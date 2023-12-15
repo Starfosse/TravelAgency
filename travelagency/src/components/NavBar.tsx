@@ -2,6 +2,12 @@ import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
 import { CarTaxiFront, CheckCircle } from "lucide-react"
 import NavItems from "./NavItems"
+import Cart from "./Cart"
+import {
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs"
 
 const NavBar = () => {
   return (
@@ -20,14 +26,18 @@ const NavBar = () => {
                 <NavItems />
               </div>
               <div className="flex items-center ml-auto justify-end space-x-6">
-                <div>SignIn</div>
-                <div>SignUp</div>
-                <div>Logout</div>
+                <SignedOut>
+                  <Link href="/sign-in">Signin</Link>
+                  <Link href="/sign-up">Signup</Link>
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
               </div>
               {/* Cart */}
-              <div className="ml-6 flex">
-                Cart
-                <CarTaxiFront />
+              <div className="ml-6 flow-root lg:mt-2">
+                <Cart />{" "}
+                {/* https://clerk.com/docs/components/control/signed-in checker pour le checkout => <SignedIn></SignedIn>*/}
               </div>
             </div>
           </div>
