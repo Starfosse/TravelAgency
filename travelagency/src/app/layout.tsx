@@ -4,6 +4,7 @@ import "./globals.css"
 import { cn } from "@/lib/utils"
 import NavBar from "@/components/NavBar"
 import { ClerkProvider } from "@clerk/nextjs"
+import Providers from "@/components/Providers"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,10 +28,12 @@ export default function RootLayout({
             inter.className
           )}>
           <main className="relative flex flex-col min-h-screen">
-            <NavBar />
-            <div className="flex-grow flex-1">
-              {children}
-            </div>
+            <Providers>
+              <NavBar />
+              <div className="flex-grow flex-1">
+                {children}
+              </div>
+            </Providers>
           </main>
         </body>
       </html>

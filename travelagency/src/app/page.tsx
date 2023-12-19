@@ -9,6 +9,7 @@ import {
   Leaf,
 } from "lucide-react"
 import Link from "next/link"
+import { trpc } from "./utils/trpc"
 
 const perks = [
   {
