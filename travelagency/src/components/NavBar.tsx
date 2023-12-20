@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
 import { CarTaxiFront, CheckCircle } from "lucide-react"
@@ -25,7 +27,7 @@ const NavBar = () => {
               <div className="ml-4 z-50 block self-stretch">
                 <NavItems />
               </div>
-              <div className="flex items-center ml-auto justify-end space-x-6">
+              {/* <div className="flex items-center ml-auto justify-end space-x-6">
                 <SignedOut>
                   <Link href="/sign-in">Signin</Link>
                   <Link href="/sign-up">Signup</Link>
@@ -33,7 +35,7 @@ const NavBar = () => {
                 <SignedIn>
                   <UserButton />
                 </SignedIn>
-              </div>
+              </div> */}
               {/* Cart */}
               <div className="ml-6 flow-root lg:mt-2">
                 <Cart />{" "}
