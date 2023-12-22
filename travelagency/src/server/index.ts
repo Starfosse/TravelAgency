@@ -2,6 +2,7 @@ import { prisma } from "@/lib/db"
 import { publicProcedure, router } from "./trpc"
 // import * as z from "zod"
 import { z } from "zod"
+import { NextResponse } from "next/server"
 
 export const appRouter = router({
   // greeting: publicProcedure.query(() => "hello tRPC v10!"),
@@ -15,7 +16,7 @@ export const appRouter = router({
     )
     .mutation(async (opts) => {
       const { input } = opts
-      console.log(input)
+      // console.log(input)
       await prisma.product.create({
         data: {
           name: input.name,
@@ -24,6 +25,20 @@ export const appRouter = router({
         },
       })
       return { success: true }
+    }),
+  deleteProduct: publicProcedure
+    .input(z.object({ id: z.string() }))
+    .mutation(async (opts) => {
+      const { input } = opts
+      await prisma.product.delete({
+        where: {
+          id: input.id,
+        },
+      })
+      // return { success: true }
+      const loginUrl = new URL("/admin")
+      return NextResponse.redirect(loginUrl)
+      // return NextResponse.json({ message: "ok" })
     }),
 })
 
