@@ -3,10 +3,10 @@
 import { put } from "@vercel/blob"
 
 export const uploadFile = async (image: File) => {
-  console.log("hello")
-  const filename = image.name
-  const blob = await put(filename, image, {
+  const blob = await put(image.name, image, {
     access: "public",
+    token:
+      "vercel_blob_rw_4TqGkn0XBL64Tk3A_e3ROsYHTgmQPT369hT804kBgMpbUf3",
   })
   return blob.url
 }

@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
+import { trpc } from "@/app/utils/trpc"
 
 type Category = (typeof PRODUCT_CATEGORIES)[number]
 
@@ -68,11 +69,13 @@ const NavItem = ({
                   </div>
                   <Link
                     href="item.href"
+                    // href={`${sendIdFromProductName(item.name)}`}
                     className="mt-6 block font-medium text-gray-900">
                     {item.name}
                   </Link>
                   <p className="mt-1" aria-hidden="true">
                     Shop now
+                    {/* {`${sendIdFromProductName(item.name)}`} */}
                   </p>
                 </div>
               ))}
@@ -85,3 +88,10 @@ const NavItem = ({
 }
 
 export default NavItem
+
+const sendIdFromProductName = (productName: string) => {
+  const product = trpc.getIdProduct.useQuery({
+    name: productName,
+  })
+  console.log(product.data?.id)
+}

@@ -18,15 +18,27 @@ const DeleteProduct = () => {
       resolver: zodResolver(ProductToDeleteValidator),
     })
 
+  const product = trpc.getIdProduct.useQuery({
+    name: "Venise",
+  })
+  console.log(product.data?.id)
+
   const { mutate: deleteData, isLoading } =
     trpc.deleteProduct.useMutation()
 
   const onSubmit = ({ id }: TProductToDeleteValidator) => {
-    resetField("id")
+    console.log("lol")
     deleteData({ id })
+    resetField("id")
+  }
+  // console.log(getIdProductQuery)
+
+  const { mutate: deleteAllProducts } =
+    trpc.deleteProducts.useMutation()
+  const onSubmit2 = () => {
+    deleteAllProducts()
   }
 
-  const handleClick = () => resetField("id")
   return (
     <MaxWidthWrapper className="max-w-4xl shadow-2xl py-6">
       <form
@@ -39,9 +51,14 @@ const DeleteProduct = () => {
           {...register("id")}
         />
         <div className="flex justify-center mt-4">
-          <Button onClick={handleClick}>Delete</Button>
+          <Button>Delete (specific id)</Button>
         </div>
       </form>
+      <div className="flex justify-center mt-8">
+        <Button onClick={onSubmit2}>
+          Delete all products
+        </Button>
+      </div>
     </MaxWidthWrapper>
   )
 }

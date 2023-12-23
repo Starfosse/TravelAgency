@@ -25,6 +25,7 @@ model Product {
   name  String @unique
   description String @unique
   price String
+  images String[]
   CreatedAt DateTime  @default(now())
   updatedAt DateTime @default(now())
 }
