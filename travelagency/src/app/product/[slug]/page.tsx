@@ -13,8 +13,39 @@ import {
   Thumbs,
 } from "swiper/modules"
 import { useState } from "react"
+import { PRODUCT_CATEGORIES } from "@/config"
+import { notFound } from "next/navigation"
 
-const Product = () => {
+interface PageProps {
+  params: {
+    slug: string
+  }
+}
+
+interface CityProps {
+  name: string
+  slug: string
+  price: string
+  description: string
+  imageSrc: string
+}
+
+const findProductBySlug = (slug: string) => {
+  let selectedCity: object | undefined
+  PRODUCT_CATEGORIES.forEach((label) => {
+    label.featured.forEach((city: CityProps) => {
+      if (city.slug === slug) selectedCity = city
+    })
+  })
+  if (typeof selectedCity !== "object") return null
+  return selectedCity
+}
+
+const Product = ({ params }: PageProps) => {
+  const product = findProductBySlug(
+    params.slug
+  ) as CityProps
+  if (!product) return notFound()
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
   return (
     <MaxWidthWrapper>
@@ -62,25 +93,15 @@ const Product = () => {
           <div>
             <div className="border-b border-gray-200 flex w-4/5 lg:w-3/5 items-baseline">
               <div className="mt-5 sm:mt-0 text-5xl">
-                Title
+                {product ? product.name : null}
               </div>
               <div className="justify-end ml-auto">
-                Price
+                {product.price}euros
               </div>
             </div>
             <Button className="my-3 px-10">Réserver</Button>
             <div className="text-muted-foreground">
-              Description Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Perferendis
-              quidem fugit aut ut amet, quibusdam ipsam sunt
-              saepe hic asperiores, placeat unde labore eius
-              deleniti ullam incidunt ratione, eveniet
-              distinctio. Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Qui quo nam
-              ipsa, dolores laborum distinctio animi aperiam
-              eveniet est nemo aliquam sapiente corporis
-              reiciendis necessitatibus delectus voluptates,
-              error amet deserunt!
+              {product.description}
             </div>
           </div>
         </div>
