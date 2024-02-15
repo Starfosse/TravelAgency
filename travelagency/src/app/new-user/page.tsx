@@ -11,7 +11,7 @@ const NewUser = async () => {
         <div>Vous êtes bien enregistrés !</div>
         <div className="mt-4">
           <Link href="/">
-            <Button>Retourner à l'accueil</Button>{" "}
+            <Button>Retourner à l&apos;accueil</Button>{" "}
           </Link>
         </div>
       </div>

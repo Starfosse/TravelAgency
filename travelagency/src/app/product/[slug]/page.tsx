@@ -45,8 +45,9 @@ const Product = ({ params }: PageProps) => {
   const product = findProductBySlug(
     params.slug
   ) as CityProps
-  if (!product) return notFound()
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
+  if (!product) return notFound()
+
   return (
     <MaxWidthWrapper>
       {/* <div>Home / {nameProduct}</div> */}

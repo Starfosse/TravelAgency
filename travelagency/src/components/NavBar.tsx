@@ -2,7 +2,11 @@
 
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
-import { CarTaxiFront, CheckCircle } from "lucide-react"
+import {
+  CarTaxiFront,
+  CheckCircle,
+  Home,
+} from "lucide-react"
 import NavItems from "./NavItems"
 import Cart from "./Cart"
 import {
@@ -20,7 +24,7 @@ const NavBar = () => {
             <div className="flex h-16 items-center">
               <div>
                 <Link href="/">
-                  <CheckCircle />
+                  <Home />
                 </Link>
               </div>
 
