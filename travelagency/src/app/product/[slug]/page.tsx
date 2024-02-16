@@ -64,7 +64,7 @@ const Product = ({ params }: PageProps) => {
               <SwiperSlide className="aspect-video">
                 <Image
                   fill
-                  alt="test"
+                  alt="image product"
                   src={product.imageSrc}
                   className="object-cover object-center"
                 />
@@ -72,21 +72,21 @@ const Product = ({ params }: PageProps) => {
               <SwiperSlide className="aspect-video">
                 <Image
                   fill
-                  alt="test"
+                  alt="image product"
                   src={product.imageSrc}
                 />
               </SwiperSlide>
               <SwiperSlide className="aspect-video">
                 <Image
                   fill
-                  alt="test"
+                  alt="image product"
                   src={product.imageSrc}
                 />
               </SwiperSlide>
               <SwiperSlide className="aspect-video">
                 <Image
                   fill
-                  alt="test"
+                  alt="image product"
                   src={product.imageSrc}
                 />
               </SwiperSlide>
