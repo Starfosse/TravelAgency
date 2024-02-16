@@ -51,7 +51,7 @@ const Product = ({ params }: PageProps) => {
   return (
     <MaxWidthWrapper>
       {/* <div>Home / {nameProduct}</div> */}
-      <div className=" mx-auto mt-12 relative justify-center max-w-6xl">
+      <div className=" mx-auto mt-12 relative justify-center max-w-6xl pb-10">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-5">
           <div className="relative">
             <Swiper
@@ -64,7 +64,7 @@ const Product = ({ params }: PageProps) => {
                 <Image
                   fill
                   alt="test"
-                  src="/nav/europe/Venise.jpg"
+                  src={product.imageSrc}
                   className="object-cover object-center"
                 />
               </SwiperSlide>
@@ -72,21 +72,21 @@ const Product = ({ params }: PageProps) => {
                 <Image
                   fill
                   alt="test"
-                  src="/nav/europe/Venise.jpg"
+                  src={product.imageSrc}
                 />
               </SwiperSlide>
               <SwiperSlide className="aspect-video">
                 <Image
                   fill
                   alt="test"
-                  src="/nav/europe/Venise.jpg"
+                  src={product.imageSrc}
                 />
               </SwiperSlide>
               <SwiperSlide className="aspect-video">
                 <Image
                   fill
                   alt="test"
-                  src="/nav/europe/Venise.jpg"
+                  src={product.imageSrc}
                 />
               </SwiperSlide>
             </Swiper>
@@ -97,11 +97,11 @@ const Product = ({ params }: PageProps) => {
                 {product ? product.name : null}
               </div>
               <div className="justify-end ml-auto">
-                {product.price}euros
+                {product.price} euros
               </div>
             </div>
             <Button className="my-3 px-10">Réserver</Button>
-            <div className="text-muted-foreground">
+            <div className="text-muted-foreground whitespace-pre-line">
               {product.description}
             </div>
           </div>

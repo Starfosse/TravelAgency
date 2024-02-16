@@ -12,22 +12,19 @@ import Link from "next/link"
 
 const perks = [
   {
-    name: "instant delivery",
+    name: "lorem ipsum",
     Icon: ArrowDownToLine,
-    description:
-      "get your assets delivered to your email in seconds and download them right away",
+    description: "lorem ipsum",
   },
   {
-    name: "Guarenteed Quality",
+    name: "lorem ipsum",
     Icon: CheckCircle,
-    description:
-      "Every assets on our platform is verfieid by our team to ensure oure highest quality standards. Not happ ? We offer a 30-day refund guarante.",
+    description: "lorem ipsum",
   },
   {
-    name: "For the Planet",
+    name: "lorem ipsum",
     Icon: Leaf,
-    description:
-      "We've pledged 1% of sales to the preservatino and restoration of the natural environment",
+    description: "lorem ipsum",
   },
 ]
 

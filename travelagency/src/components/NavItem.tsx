@@ -14,12 +14,14 @@ interface NavItemProps {
   isOpen: boolean
   isAnyOpen: boolean
   handleOpen: () => void
+  closepreview: () => void
 }
 const NavItem = ({
   isAnyOpen,
   isOpen,
   category,
   handleOpen,
+  closepreview,
 }: NavItemProps) => {
   return (
     <div className="flex ">
@@ -70,6 +72,7 @@ const NavItem = ({
                     {item.name}
                   </p>
                   <Link
+                    onClick={closepreview}
                     href={`/product/${item.slug}`}
                     className="mt-1"
                     aria-hidden="true">

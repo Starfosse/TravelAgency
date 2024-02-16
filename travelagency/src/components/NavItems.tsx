@@ -37,6 +37,9 @@ const NavItems = () => {
             setActiveIndex(i)
           }
         }
+        const closepreview = () => {
+          setActiveIndex(null)
+        }
         const isOpen = i === activeIndex
         return (
           <NavItem
@@ -44,6 +47,7 @@ const NavItems = () => {
             isOpen={isOpen}
             category={category}
             handleOpen={handleOpen}
+            closepreview={() => closepreview()}
             key={category.value}
           />
         )
