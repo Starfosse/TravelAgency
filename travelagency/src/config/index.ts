@@ -82,7 +82,23 @@ export const PRODUCT_CATEGORIES = [
         name: "Pekin",
         slug: "pekin",
         price: "200",
-        description: "lorem ipsum",
+        description: `🏯🐉 Explorez la grandeur de Pékin : Un voyage épique dans l'ancienne capitale impériale de la Chine ! 🍜🏮
+
+        Bienvenue dans la ville millénaire de Pékin, où l'histoire impériale, la culture vibrante et la modernité se rencontrent pour créer une expérience de voyage incomparable. Plongez dans l'essence même de la Chine ancienne et contemporaine lors de votre séjour dans cette métropole majestueuse.
+        
+        🏨 Hébergement dans des hôtels élégants et luxueux : Découvrez le confort et le raffinement en séjournant dans des hôtels prestigieux situés au cœur de la ville, offrant un mélange parfait de tradition chinoise et de commodités modernes. Des établissements de renommée mondiale vous accueillent dans un cadre somptueux, où chaque détail est pensé pour votre confort.
+        
+        🏯🎎 Exploration des trésors historiques et culturels : Parcourez les siècles d'histoire chinoise en visitant des sites emblématiques tels que la Cité interdite, le Temple du Ciel et la Grande Muraille de Chine, qui témoignent de la grandeur et de la richesse culturelle de l'ancienne dynastie impériale. Plongez-vous dans l'atmosphère mystique des hutongs traditionnels, où vous pourrez découvrir la vie quotidienne des habitants de Pékin.
+        
+        🍜🥟 Dégustation de la délicieuse cuisine chinoise : Éveillez vos papilles avec une incroyable variété de plats chinois, des nouilles sautées aux dim sum délicatement préparés, en passant par les canard laqué croustillant et les délices sucrés des desserts traditionnels. Explorez les marchés alimentaires animés et les restaurants locaux pour une expérience culinaire authentique.
+        
+        🌸🏞️ Émerveillement devant la beauté naturelle et les jardins chinois : Échappez à l'agitation de la ville en vous promenant dans les magnifiques jardins impériaux de Pékin, tels que le Jardin botanique de Pékin et le Jardin de Beihai, où vous pourrez profiter de la tranquillité et de la sérénité de la nature luxuriante.
+        
+        🎭🎶 Divertissements et spectacles traditionnels : Imprégnez-vous de la culture chinoise en assistant à des spectacles de théâtre traditionnel, des opéras de Pékin et des performances d'arts martiaux. Découvrez la scène artistique dynamique de la ville, des galeries d'art contemporain aux soirées de musique live.
+        
+        🛍️🎁 Shopping et artisanat local : Faites du shopping dans les marchés animés, les centres commerciaux élégants et les boutiques d'artisanat local de Pékin, où vous trouverez des trésors uniques, des souvenirs authentiques et des produits artisanaux traditionnels à ramener chez vous.
+        
+        Votre séjour à Pékin promet d'être une expérience inoubliable, où chaque moment est une découverte et chaque expérience est une merveille. Réservez dès maintenant et préparez-vous à vivre des moments magiques dans cette ville impériale légendaire de la Chine ! 🇨🇳✨`,
         imageSrc: "/nav/asie/pekin.jpg",
       },
       {
@@ -141,21 +157,67 @@ export const PRODUCT_CATEGORIES = [
         name: "New-York",
         slug: "new-york",
         price: "200",
-        description: "lorem ipsum",
+        description: `🗽🌆 Explorez la splendeur de New York : Un séjour inoubliable dans la ville qui ne dort jamais ! 🍎🎭
+
+        Bienvenue dans la ville emblématique de New York, où l'énergie vibrante, la diversité culturelle et les icônes mondiales se rencontrent pour créer une expérience de voyage inoubliable. Plongez-vous dans l'effervescence de cette métropole cosmopolite, où chaque rue révèle une nouvelle surprise et chaque quartier a son propre caractère distinctif.
+        
+        🏨 Hébergement dans des hôtels emblématiques : Découvrez le luxe et le confort en séjournant dans des hôtels prestigieux situés au cœur de Manhattan, offrant des vues époustouflantes sur le skyline de la ville et un accès facile aux principales attractions. Des établissements historiques aux hôtels design ultramodernes, New York offre une gamme d'options d'hébergement pour tous les goûts et tous les budgets.
+        
+        🏙️🌃 Exploration des quartiers emblématiques : Parcourez les quartiers emblématiques de New York, de Times Square animé à Central Park verdoyant en passant par le chic Upper East Side et le bohème Greenwich Village. Imprégnez-vous de l'atmosphère unique de chaque quartier, découvrez des boutiques de créateurs, des galeries d'art inspirantes et des restaurants gastronomiques de renommée mondiale.
+        
+        🍎🍕 Dégustation de la délicieuse cuisine new-yorkaise : Éveillez vos papilles avec une incroyable variété de saveurs, des pizzas authentiques aux bagels délicieux, en passant par les steaks juteux et les desserts alléchants. Explorez les marchés alimentaires éclectiques, les restaurants ethniques et les célèbres food trucks pour une expérience gastronomique inoubliable à chaque bouchée.
+        
+        🎭🎶 Culture et divertissement : Imprégnez-vous de la scène artistique dynamique de New York en assistant à des spectacles de Broadway, des concerts de musique live et des expositions d'art contemporain dans les musées mondialement connus. Découvrez l'effervescence de la vie nocturne new-yorkaise avec ses bars branchés, ses clubs animés et ses soirées festives qui durent jusqu'au petit matin.
+        
+        🛍️🛒 Shopping et glamour urbain : Faites du shopping dans les boutiques de luxe de la Cinquième Avenue, les magasins branchés de SoHo et les marchés vintage de Brooklyn, où vous trouverez des marques de créateurs, des articles uniques et des souvenirs inoubliables à ramener chez vous.
+        
+        Votre séjour à New York promet d'être une aventure inoubliable, où la diversité culturelle et l'effervescence urbaine vous captiveront à chaque instant. Réservez dès maintenant et préparez-vous à vivre des moments mémorables dans la ville la plus emblématique du monde ! 🌟🗽`,
         imageSrc: "/nav/amerique/new-york.jpg",
       },
       {
         name: "Montréal",
         slug: "montreal",
         price: "200",
-        description: "lorem ipsum",
+        description: `🍁🏙️ Découvrez l'effervescence de Montréal : Un séjour inoubliable au cœur du Québec ! 🥖🎭
+
+        Bienvenue dans la métropole multiculturelle de Montréal, où l'histoire, la gastronomie et le dynamisme urbain se mêlent pour offrir une expérience de voyage authentique et enrichissante. Plongez-vous dans l'ambiance unique de cette ville cosmopolite, où chaque coin de rue raconte une histoire fascinante.
+        
+        🏨 Hébergement dans des établissements de charme : Découvrez le confort et le style en séjournant dans des hôtels élégants et accueillants situés au cœur de Montréal. Que vous préfériez le charme des hôtels historiques du Vieux-Montréal ou le luxe moderne du centre-ville, vous trouverez l'endroit idéal pour vous ressourcer après une journée d'exploration.
+        
+        🍁🎨 Exploration des quartiers emblématiques : Parcourez les quartiers emblématiques de Montréal, du Vieux-Port animé au quartier artistique du Plateau Mont-Royal en passant par le quartier historique du Mile End. Imprégnez-vous de l'atmosphère unique de chaque quartier, découvrez des boutiques pittoresques, des galeries d'art inspirantes et des cafés animés.
+        
+        🍽️🥂 Dégustation de la délicieuse cuisine montréalaise : Éveillez vos papilles avec une incroyable variété de saveurs, des classiques de la cuisine québécoise comme la poutine et la tourtière aux plats internationaux raffinés. Explorez les marchés alimentaires dynamiques, les restaurants branchés et les brasseries artisanales pour une expérience gastronomique inoubliable.
+        
+        🏞️🚴 Détente dans la nature urbaine : Échappez à l'agitation de la ville en explorant les espaces verts de Montréal, comme le magnifique parc du Mont-Royal et le paisible canal Lachine. Profitez de balades à vélo, de randonnées pédestres et de pique-niques relaxants dans ces oasis urbaines où la nature est à portée de main.
+        
+        🎭🎶 Culture et divertissement : Imprégnez-vous de la scène artistique dynamique de Montréal en assistant à des spectacles de théâtre, des concerts de musique live et des festivals culturels tout au long de l'année. Explorez les musées fascinants, les galeries d'art contemporain et les événements culturels uniques qui font de Montréal une ville bouillonnante d'énergie créative.
+        
+        🛍️🎁 Shopping et artisanat local : Faites du shopping dans les boutiques branchées, les marchés artisanaux et les magasins vintage de Montréal, où vous trouverez des trésors uniques, des souvenirs authentiques et des créations locales à ramener chez vous.
+        
+        Votre séjour à Montréal promet d'être une expérience inoubliable, où la diversité culturelle et la convivialité québécoise vous accueillent à bras ouverts. Réservez dès maintenant et préparez-vous à vivre des moments mémorables dans cette ville dynamique et accueillante du Canada ! 🇨🇦✨`,
         imageSrc: "/nav/amerique/montreal.jpg",
       },
       {
         name: "Mexico",
         slug: "mexico",
         price: "200",
-        description: "lorem ipsum",
+        description: `🌵🏰 Explorez la vibrante Mexico : Un voyage fascinant au cœur de la culture mexicaine ! 🌮🎉
+
+        Bienvenue dans la capitale animée du Mexique, où l'histoire ancienne, l'art coloré et la cuisine délicieuse se rencontrent pour créer une expérience de voyage inoubliable. Plongez dans l'énergie électrique de Mexico et découvrez les trésors cachés de cette ville cosmopolite.
+        
+        🏨 Hébergement dans des hôtels charmants et authentiques : Découvrez l'hospitalité chaleureuse du Mexique en séjournant dans des hôtels élégants situés au cœur de la ville ou dans des quartiers pittoresques, offrant un mélange unique de confort moderne et de charme traditionnel mexicain.
+        
+        🏰🎨 Exploration des trésors historiques et artistiques : Parcourez les siècles d'histoire mexicaine en visitant des sites emblématiques tels que le Zócalo, le Templo Mayor et le Palacio de Bellas Artes, qui témoignent de la grandeur et de la richesse culturelle du passé précolombien et colonial du Mexique. Imprégnez-vous de l'art coloré de Diego Rivera et Frida Kahlo dans les musées et galeries d'art de renommée mondiale.
+        
+        🌮🍹 Dégustation de la délicieuse cuisine mexicaine : Éveillez vos papilles avec une incroyable variété de plats mexicains, des tacos et tamales aux enchiladas et ceviches, en passant par les délices sucrés des churros et des paletas. Explorez les marchés alimentaires animés et les stands de rue pour une expérience culinaire authentique.
+        
+        🏞️🌵 Émerveillement devant la beauté naturelle et les sites naturels : Échappez à l'agitation de la ville en explorant les trésors naturels du Mexique, tels que les pyramides de Teotihuacán, les canaux de Xochimilco et les volcans entourant la ville. Plongez-vous dans la beauté sauvage de la nature mexicaine et découvrez des paysages époustouflants à chaque tournant.
+        
+        🎉💃 Divertissements et festivals culturels : Imprégnez-vous de la culture mexicaine en participant à des festivals traditionnels, des défilés colorés et des célébrations musicales. Découvrez la passion du mariachi, la grâce du ballet folklorique et l'énergie contagieuse des danses traditionnelles.
+        
+        🛍️🎁 Shopping et artisanat local : Faites du shopping dans les marchés artisanaux, les boutiques de design mexicain et les galeries d'art contemporain de Mexico, où vous trouverez des trésors uniques, des souvenirs authentiques et des œuvres d'art locales à ramener chez vous.
+        
+        Votre séjour à Mexico promet d'être une aventure inoubliable, où chaque moment est une découverte et chaque expérience est une merveille. Réservez dès maintenant et préparez-vous à vivre des moments magiques dans cette ville dynamique et colorée du Mexique ! 🇲🇽✨`,
         imageSrc: "/nav/amerique/mexico.jpg",
       },
     ],
