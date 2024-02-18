@@ -33,8 +33,10 @@ const NavBar = () => {
               </div>
               <div className="flex items-center ml-auto justify-end space-x-6">
                 <SignedOut>
-                  <Link href="/sign-in">Signin</Link>
-                  <Link href="/sign-up">Signup</Link>
+                  <Link href="/sign-in">Se connecter</Link>
+                  <Link href="/sign-up">
+                    S&apos;inscrire
+                  </Link>
                 </SignedOut>
                 <SignedIn>
                   <UserButton />
