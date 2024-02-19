@@ -99,7 +99,7 @@ export const PRODUCT_CATEGORIES = [
         🛍️🎁 Shopping et artisanat local : Faites du shopping dans les marchés animés, les centres commerciaux élégants et les boutiques d'artisanat local de Pékin, où vous trouverez des trésors uniques, des souvenirs authentiques et des produits artisanaux traditionnels à ramener chez vous.
         
         Votre séjour à Pékin promet d'être une expérience inoubliable, où chaque moment est une découverte et chaque expérience est une merveille. Réservez dès maintenant et préparez-vous à vivre des moments magiques dans cette ville impériale légendaire de la Chine ! 🇨🇳✨`,
-        imageSrc: "/nav/asie/pekin.jpg",
+        imageSrc: "/nav/asie/Pekin.jpg",
       },
       {
         name: "Tokyo",
@@ -122,7 +122,7 @@ export const PRODUCT_CATEGORIES = [
         🛍️🎁 Shopping et design avant-gardiste : Faites du shopping dans les grands magasins extravagants, les boutiques de créateurs branchées et les marchés aux puces vintage de Tokyo, où vous trouverez des trésors uniques, des produits de haute technologie et des souvenirs uniques à ramener chez vous.
         
         Votre séjour à Tokyo promet d'être une aventure inoubliable, où chaque instant est une découverte et chaque expérience est une merveille. Réservez dès maintenant et préparez-vous à vivre des moments magiques dans cette métropole fascinante du Japon ! 🇯🇵✨`,
-        imageSrc: "/nav/asie/tokyo.jpg",
+        imageSrc: "/nav/asie/Tokyo.jpg",
       },
       {
         name: "Seoul",
@@ -145,7 +145,7 @@ export const PRODUCT_CATEGORIES = [
         🛍️🎁 Shopping et innovations technologiques : Faites du shopping dans les centres commerciaux ultramodernes, les marchés animés et les boutiques de design avant-gardiste de Séoul, où vous trouverez des produits de haute technologie, des articles de mode tendance et des souvenirs uniques à ramener chez vous.
         
         Votre séjour à Séoul promet d'être une aventure passionnante, où la fusion entre tradition et modernité crée une expérience unique au cœur de la Corée du Sud. Réservez dès maintenant et préparez-vous à vivre des moments inoubliables dans cette ville dynamique et captivante ! 🇰🇷✨`,
-        imageSrc: "/nav/asie/seoul.jpg",
+        imageSrc: "/nav/asie/Seoul.jpg",
       },
     ],
   },
